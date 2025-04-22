@@ -8,10 +8,9 @@ import torch.nn.functional as F
 from collections import deque
 from torch.utils.data import DataLoader, TensorDataset
 import tqdm
-import  gym # Setting up new environment
+import  gym
 from tqdm import trange,tqdm
 
-# 設置環境和框架
 class Network(nn.Module):
 
     def __init__(self, action_size, seed = 42): #constructor init method we have multidimentional array here hence, action size passed here.
